@@ -1,0 +1,98 @@
+Project Overview
+
+The aim of this project was to analyze a House Price dataset and build a model to predict house prices based on given features. The project followed a complete data science workflow: loading data, cleaning, exploratory data analysis (EDA), visualization, model building, and evaluation.
+
+
+---
+
+⚙️ Workflow
+
+1. Data Collection
+
+Imported libraries: Pandas, Numpy, Matplotlib, Seaborn, Scikit-learn.
+
+Loaded the dataset into a Pandas DataFrame for analysis.
+
+
+2. Data Cleaning & Preprocessing
+
+Checked the dataset shape and first few rows (.head()).
+
+Identified missing values and handled them appropriately.
+
+Checked data types of each column (categorical vs numerical).
+
+Renamed/standardized column names for clarity.
+
+
+3. Exploratory Data Analysis (EDA)
+
+Descriptive statistics: mean, median, min, max, standard deviation.
+
+Distribution checks: used value counts and summary statistics to understand feature spread.
+
+Visualizations:
+
+Bar Graph: Showed distribution of categorical variables (e.g., number of bedrooms).
+
+Heatmap: Displayed correlation between features and the target variable (house price).
+
+(Optional if you later add) Scatter Plot: Showed relationships between continuous features like size vs. price.
+
+
+
+4. Feature Selection
+
+From the heatmap, identified the features most correlated with house price.
+
+Dropped irrelevant or weakly correlated features to simplify the model.
+
+
+5. Splitting the Dataset
+
+Divided the data into training set (for model learning) and testing set (for evaluation).
+
+
+6. Model Building
+
+Chose Linear Regression as the baseline model.
+
+Trained the model using the training set.
+
+Predicted house prices on the test set.
+
+
+7. Model Evaluation
+
+Evaluated model accuracy using:
+
+Mean Squared Error (MSE)
+
+Root Mean Squared Error (RMSE)
+
+R² Score
+
+
+Compared actual vs predicted values to assess performance.
+
+
+
+---
+
+📊 Visualizations Included
+
+Bar Graph: Showed how categorical features (like number of rooms) were distributed.
+
+Heatmap: Helped in identifying correlation strength between features and house price.
+
+
+
+---
+
+✅ Key Insights
+
+Features such as size of the house and number of rooms had the strongest positive correlation with house prices.
+
+Some features had little to no effect and could be dropped without hurting model performance.
+
+The regression model gave a reasonable baseline performance, but advanced models could improve accuracy.
